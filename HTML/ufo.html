@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UFO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- UFO start -->
+    <link rel="stylesheet" href="../CSS/ufo.css">
+    <script src="../JS/ufo.js"></script>
+    <!-- UFO end -->
+
+
+
+</head>
+
+<body>
+
+    <div class="page-header text-center bg-primary">
+        <h1>UFO Sightings</h1>
+        <p>We have been visited!</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-2">
+                <h3>Data</h3>
+                <p>Please select json file of which contents are to be read:</p>
+                <p>
+                    <input type="file" id="txtfiletoread" />
+                </p>
+
+                <h3>Selection</h3>
+                <p>Please specify attribute values. Partial values are alowed.</p>
+                <p>
+                    <label for="search">Date:</label>
+                    <input type="text" id="date_field">
+                </p>
+                <p>
+                    <label for="search">Duration:</label>
+                    <input type="text" id="duration_field">
+                </p>
+                <p>
+                    <label for="search">Shape:</label>
+                    <input type="text" id="shape_field">
+                </p>
+                <p>
+                    <label for="search">City:</label>
+                    <input type="text" id="city_field">
+                </p>
+                <p>
+                    <label for="search">State:</label>
+                    <input type="text" id="state_field">
+                </p>
+                <p>
+                    <label for="search">Country:</label>
+                    <input type="text" id="country_field">
+                </p>
+                <p>
+                    <button type="button" class="btn-default" id="apply_filter">Apply Filter</button>
+                </p>
+
+
+            </div>
+
+            <div class="col-lg-8">
+                <h3>The Gullible are Among Us</h3>
+                <p>A table of data will be displayed here when a file is selected.</p>
+                <p>This exercise was given JSON files of U.F.O. sightings.</p>
+                <p>These U.F.O. zealots need to remember that the "U" is for unidentified.</p>
+                <p>However, a JSON file of <i>any</i> data will be displayed if it is in the same format.</p>
+                <p>So, go ahead and click on "Choose File", select a file, and wait for the table to appear.</p>
+            </div>
+
+            <div class="col-lg-2">
+                <h3>Navigation</h3>
+                <p>Please select page number: </p>
+                <p>
+                    <label for="search">Page:</label>
+                    <input type="text" id="page_field">
+                </p>
+                <p>
+                    <button type="button" class="btn-default" id="select_page">Select</button>
+                </p>
+                <p>Or navigate to page:</p>
+                <p>
+                    <button type="button" class="btn-default" id="previous_page">Previous</button>
+                    <button type="button" class="btn-default" id="next_page">Next</button>
+                </p>
+
+                <h3>Status</h3>
+                <p id="status_paragraph">
+                    <label for="search">Status:</label>
+                    <label id="status_label" for="search">Choose File</label>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
